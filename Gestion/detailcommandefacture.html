@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bidè - Commande #CMD-2023-1042</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- CSS perso -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="d-flex">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar d-flex flex-column p-3">
+      <div class="sidebar-brand d-flex align-items-center mb-4">
+        <img src="images/logo-bide.png" alt="Logo Bidè" class="logo-img me-2">
+        <div>
+          <h5 class="mb-0 text-primary fw-bold">Bidè</h5>
+          <small class="text-muted">Gestion Lavage</small>
+        </div>
+      </div>
+
+      <nav class="nav flex-column flex-grow-1">
+        <a href="dashbord.html" class="nav-link sidebar-link">
+          <i class="bi bi-grid-1x2 me-2"></i> Dashboard
+        </a>
+        <a href="listedesclients.html" class="nav-link sidebar-link">
+          <i class="bi bi-people me-2"></i> Clients
+        </a>
+        <a href="listedesvehicules.html" class="nav-link sidebar-link">
+          <i class="bi bi-car-front me-2"></i> Véhicules
+        </a>
+        <a href="cataloguedesprestations.html" class="nav-link sidebar-link">
+          <i class="bi bi-droplet me-2"></i> Prestations
+        </a>
+        <a href="listedescommandes.html" class="nav-link sidebar-link active">
+          <i class="bi bi-cart3 me-2"></i> Commandes
+        </a>
+        <a href="parametres.html" class="nav-link sidebar-link">
+          <i class="bi bi-gear me-2"></i> Paramètres
+        </a>
+        <a href="statistiques.html" class="nav-link sidebar-link">
+          <i class="bi bi-bar-chart me-2"></i> Stats
+        </a>
+        <a href="faq.html" class="nav-link sidebar-link">
+          <i class="bi bi-question-circle me-2"></i> FAQ
+        </a>
+      </nav>
+
+      <a href="#" class="nav-link sidebar-link mt-auto">
+        <i class="bi bi-person-circle me-2"></i> Mon Profil
+      </a>
+    </aside>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main class="main-content flex-grow-1 p-4">
+
+      <!-- Topbar -->
+      <header class="topbar d-flex justify-content-between align-items-center mb-4">
+        <div class="input-group topbar-search">
+          <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+          <input type="text" class="form-control" placeholder="Rechercher...">
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <i class="bi bi-bell fs-5"></i>
+          <i class="bi bi-circle fs-5"></i>
+          <img src="images/Profil3.jpg" alt="Utilisateur" class="avatar-img">
+        </div>
+      </header>
+
+      <!-- Titre + actions -->
+      <div class="d-flex justify-content-between align-items-start mb-4 flex-wrap gap-3">
+        <div>
+          <h4 class="mb-1">Commande #CMD-2023-1042</h4>
+          <p class="text-muted mb-0">Créée le 24 Octobre 2023 à 14:30</p>
+        </div>
+        <div class="d-flex gap-2">
+          <button type="button" class="btn btn-outline-secondary" id="btnEnvoyerSMS">
+            <i class="bi bi-chat-dots me-1"></i> Envoyer SMS
+          </button>
+          <button type="button" class="btn btn-outline-secondary" id="btnExportPDF">
+            <i class="bi bi-download me-1"></i> Export PDF
+          </button>
+          <button type="button" class="btn btn-primary" id="btnImprimer">
+            <i class="bi bi-printer me-1"></i> Imprimer
+          </button>
+        </div>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Colonne gauche : Statut / Assignation / Remarques -->
+        <div class="col-lg-4">
+
+          <div class="card info-card p-4 mb-3">
+            <h6 class="fw-bold mb-3">Statut</h6>
+            <div class="d-flex gap-2">
+              <span class="badge badge-termine">TERMINÉ</span>
+              <span class="badge badge-paye">PAYÉ</span>
+            </div>
+          </div>
+
+          <div class="card info-card p-4 mb-3">
+            <h6 class="fw-bold mb-3">Assignation</h6>
+            <div class="d-flex align-items-center gap-3">
+              <img src="images/laveur.jpg" alt="Komi Mensah" class="avatar-img-md">
+              <div>
+                <div class="fw-bold">Patrick AGBEKO</div>
+                <small class="text-muted">Laveur Senior - Equipe A</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="card info-card p-4">
+            <h6 class="fw-bold mb-3">Remarques Laveur</h6>
+            <blockquote class="remarque-laveur">
+              "Taches de boue tenaces sur les jantes arrière, nécessite un brossage
+              supplémentaire. Intérieur très propre, aspiration rapide effectuée."
+            </blockquote>
+          </div>
+
+        </div>
+
+        <!-- Colonne droite : Facture -->
+        <div class="col-lg-8">
+          <div class="card facture-card p-4" id="factureCard">
+
+            <!-- En-tête facture -->
+            <div class="d-flex justify-content-between align-items-start mb-4 flex-wrap gap-3">
+              <div class="d-flex align-items-center gap-3">
+                <div class="facture-logo">
+                  <i class="bi bi-droplet-fill"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold mb-1">Lavage Automobile Bidè</h6>
+                  <small class="text-muted d-block">Boulevard du 13 Janvier, Lomé, Togo</small>
+                  <small class="text-muted">Tel: +228 90 00 00 00 | NIF: 123456789</small>
+                </div>
+              </div>
+              <div class="text-end">
+                <h5 class="fw-bold text-muted mb-1">FACTURE</h5>
+                <div class="fw-bold">#FAC-2023-1042</div>
+                <small class="text-muted">Date: 24 Octobre 2023</small>
+              </div>
+            </div>
+
+            <hr>
+
+            <!-- Facturé à -->
+            <div class="mb-4">
+              <small class="text-muted fw-bold">FACTURÉ À</small>
+              <h6 class="fw-bold mt-1 mb-1">AKIMMAKO</h6>
+              <div class="text-muted small">Véhicule: Toyota RAV4 (TG-1234-A)</div>
+              <div class="text-muted small">Client Privilège</div>
+            </div>
+
+            <!-- Tableau services -->
+            <div class="table-responsive mb-4">
+              <table class="table table-facture mb-0">
+                <thead>
+                  <tr>
+                    <th>SERVICE / DESCRIPTION</th>
+                    <th class="text-center">QTÉ</th>
+                    <th class="text-end">PRIX UNITAIRE (FCFA)</th>
+                    <th class="text-end">TOTAL (FCFA)</th>
+                  </tr>
+                </thead>
+                <tbody id="corpsFacture">
+                  <tr>
+                    <td>
+                      <div class="fw-bold">Lavage Complet (Intérieur + Extérieur)</div>
+                      <small class="text-muted">Nettoyage carrosserie, aspiration, vitres</small>
+                    </td>
+                    <td class="text-center">1</td>
+                    <td class="text-end">3,500</td>
+                    <td class="text-end fw-bold">3,500</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="fw-bold">Nettoyage Jantes Avancé</div>
+                      <small class="text-muted">Produit désoxydant et brossage manuel</small>
+                    </td>
+                    <td class="text-center">1</td>
+                    <td class="text-end">1,000</td>
+                    <td class="text-end fw-bold">1,000</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="fw-bold">Parfum d'Intérieur</div>
+                      <small class="text-muted">Senteur 'Océan'</small>
+                    </td>
+                    <td class="text-center">1</td>
+                    <td class="text-end">500</td>
+                    <td class="text-end fw-bold">500</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Totaux -->
+            <div class="facture-totaux ms-auto">
+              <div class="d-flex justify-content-between py-2">
+                <span class="text-muted">Sous-total</span>
+                <span id="sousTotal">5,000 FCFA</span>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <span class="text-muted">TVA (18%)</span>
+                <span id="tva">900 FCFA</span>
+              </div>
+              <div class="d-flex justify-content-between py-3 total-net-box px-3">
+                <span class="fw-bold">Total Net</span>
+                <span class="fw-bold text-primary" id="totalNet">5,900 FCFA</span>
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <!-- Message de remerciement -->
+            <div class="text-center">
+              <p class="fw-bold mb-1">"Merci de votre confiance"</p>
+              <small class="text-muted">
+                Pour toute question concernant cette facture, veuillez nous contacter au +228 90 00 00 00.
+              </small>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-muted py-3">
+    <small>&copy; 2026 Bidè - Gestion Lavage. Tous droits réservés.</small>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS perso -->
+  <script src="js/script.js"></script>
+</body>
+</html>
