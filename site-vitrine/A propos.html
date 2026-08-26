@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos tarifs — Bidè</title>
+  <meta name="description" content="Les formules Basic, Standard et Premium de la station de lavage Bidè à Lomé, avec prix et prestations incluses.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bide-nav sticky-top">
+    <div class="container">
+      <a class="bide-brand" href="index.html">
+        <span class="logo-chip"><img src="Images/logo.png" width="80" height="80" alt=""></span> Bidè
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-lg-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link active" href="A propos.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="Nos services.html">Nos services</a></li>
+          <li class="nav-item"><a class="nav-link" href="Nos tarifs.html">Nos tarifs</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex gap-2 mt-3 mt-lg-0">
+          <a href="Contact.html" class="btn btn-blue">Réserver maintenant</a>
+          <a href="Contact.html" class="icon-circle d-none d-lg-inline-flex" aria-label="Nous appeler">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BANNIÈRE -->
+  <header class="section pb-0" style="background:linear-gradient(180deg,#eaf1fb 0%,#fff 100%);">
+    <div class="container text-center">
+      <p class="eyebrow mb-2">Nos formules</p>
+      <h1 class="mb-3">Tarification Claires et Transparentes</h1>
+      <p class="text-slate mx-auto" style="max-width:32rem;">Choisissez la formule adaptée à votre véhicule et à vos besoins. Le prix affiché est le prix payé, sans surprise.</p>
+    </div>
+  </header>
+
+  <!-- FORMULES -->
+  <section class="section pt-4">
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="plan-card">
+            <p class="eyebrow mb-1">Basic</p>
+            <p class="plan-desc">L'essentiel pour un véhicule propre, rapidement.</p>
+            <div class="plan-price">3 000<span> FCFA</span></div>
+            <ul>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><path d="M9 12l2 2 4-4" stroke="var(--blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="var(--blue)" stroke-width="1.6"/></svg> Lavage extérieur</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><path d="M9 12l2 2 4-4" stroke="var(--blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="var(--blue)" stroke-width="1.6"/></svg> Nettoyage des jantes</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><path d="M9 12l2 2 4-4" stroke="var(--blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="var(--blue)" stroke-width="1.6"/></svg> Séchage microfibre</li>
+            </ul>
+            <br><br><br>
+            <a href="Contact.html" class="btn btn-outline-navy w-100">Choisir Basic</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="plan-card featured">
+            <span class="plan-badge">Recommandé</span>
+            <p class="eyebrow mb-1" style="color: #ffffff;;">Standard</p>
+            <p class="plan-desc">L'équilibre parfait entre extérieur et intérieur.</p>
+            <div class="plan-price">7 000<span>FCFA</span></div>
+            <ul>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><path d="M9 12l2 2 4-4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="1.6"/></svg> Tout le contenu Basic</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><path d="M9 12l2 2 4-4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="1.6"/></svg> Aspiration intérieure complète</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><path d="M9 12l2 2 4-4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="1.6"/></svg> Nettoyage des vitres</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><path d="M9 12l2 2 4-4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="1.6"/></svg> Désodorisation</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><path d="M9 12l2 2 4-4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="1.6"/></svg> Traitement des plastiques</li>
+            </ul>
+            <a href="Contact.html" class="btn btn-white w-100">Choisir Standard</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="plan-card">
+            <p class="eyebrow mb-1">Premium</p>
+            <p class="plan-desc">Le soin complet pour un véhicule comme neuf.</p>
+            <div class="plan-price">15 000<span> FCFA</span></div>
+            <ul>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><path d="M9 12l2 2 4-4" stroke="var(--blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="var(--blue)" stroke-width="1.6"/></svg> Tout le contenu Standard</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><path d="M9 12l2 2 4-4" stroke="var(--blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="var(--blue)" stroke-width="1.6"/></svg> Cirage et lustrage carrosserie</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><path d="M9 12l2 2 4-4" stroke="var(--blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="var(--blue)" stroke-width="1.6"/></svg> Traitement plastiques et pneus</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><path d="M9 12l2 2 4-4" stroke="var(--blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="var(--blue)" stroke-width="1.6"/></svg> Contrôle qualité final</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><path d="M9 12l2 2 4-4" stroke="var(--blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="var(--blue)" stroke-width="1.6"/></svg> Parfum d'ambiance offert</li>
+            </ul>
+            <a href="Contact.html" class="btn btn-outline-navy w-100">Choisir Premium</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="plan-note mt-4 mx-auto" style="max-width:40rem;">
+        Supplément SUV / 4x4 : +1 500 FCFA — s'applique sur toutes les formules.
+      </div>
+    </div>
+  </section>
+
+  <!-- QUALITÉ SANS COMPROMIS -->
+  <section class="section" style="background:var(--bg);">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5">
+          <div class="feature-photo" style="min-height:280px;">
+            <img src="Images/technicien-bidè.png" alt="Technicien Bidè au travail dans l'atelier">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <p class="eyebrow mb-2">Notre exigence</p>
+          <h2 class="mb-3">Une Qualité Sans Compromis</h2>
+          <p class="text-slate mb-4">Chaque prestation suit une méthode fixe, vérifiée par un contrôle qualité avant restitution du véhicule. Notre équipe est formée en continu pour garantir un résultat constant, formule après formule.</p>
+          <div class="row g-4">
+            <div class="col-6">
+              <div class="stat-number">98%</div>
+              <div class="stat-label">clients satisfaits</div>
+            </div>
+            <div class="col-6">
+              <div class="stat-number">15</div>
+              <div class="stat-label">années d'expérience combinée</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bide-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="bide-brand mb-2"><span class="logo-chip"><img src="Images/logo.png" width="80" height="80" alt="Logo de Bidè"></span> Bidè</div><br>
+          <p class="small mb-0">La station de lavage automobile de référence à Lomé.</p>
+        </div>
+        <div class="col-md-2">
+          <h6 class="mb-3">Liens</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html">Accueil</a></li>
+            <li class="mb-2"><a href="A propos.html">À propos</a></li>
+            <li class="mb-2"><a href="Nos services.html">Services</a></li>
+            <li><a href="Nos tarifs.html">Tarifs</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="mb-3">Horaires</h6>
+          <p class="small mb-1">Lun – Sam : 7h00 – 19h00</p>
+          <p class="small mb-0">Dimanche : 9h00 – 15h00</p>
+        </div>
+        <div class="col-md-3">
+          <h6 class="mb-3">Contact</h6>
+          <p class="small mb-1">Lomé, Togo</p>
+          <p class="small mb-0">+228 90 00 00 00</p>
+        </div>
+      </div>
+      <hr class="my-4">
+      <p class="small mb-0 text-center">© 2026 Bidè — Station de lavage AKIMMAKO. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
