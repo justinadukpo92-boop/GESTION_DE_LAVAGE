@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bidè - Dashboard</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- CSS perso -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="d-flex">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar d-flex flex-column p-3">
+      <div class="sidebar-brand d-flex align-items-center mb-4">
+        <img src="images/logo-bide.png" alt="Logo Bidè" class="logo-img me-2">
+        <div>
+          <h5 class="mb-0 text-primary fw-bold">Bidè</h5>
+          <small class="text-muted">Gestion Lavage</small>
+        </div>
+      </div>
+
+      <nav class="nav flex-column flex-grow-1">
+        <a href="dashbord.html" class="nav-link sidebar-link active">
+          <i class="bi bi-grid-1x2 me-2"></i> Dashboard
+        </a>
+        <a href="listedesclients.html" class="nav-link sidebar-link">
+          <i class="bi bi-people me-2"></i> Clients
+        </a>
+        <a href="listedesvehicules.html" class="nav-link sidebar-link">
+          <i class="bi bi-car-front me-2"></i> Véhicules
+          </a>
+        <a href="cataloguedesprestations.html" class="nav-link sidebar-link">
+          <i class="bi bi-droplet me-2"></i> Prestations
+        </a>
+        <a href="listedescommandes.html" class="nav-link sidebar-link">
+          <i class="bi bi-cart3 me-2"></i> Commandes
+        </a>
+        <a href="parametres.html" class="nav-link sidebar-link">
+          <i class="bi bi-gear me-2"></i> Paramètres
+        </a>
+        <a href="statistiques.html" class="nav-link sidebar-link">
+          <i class="bi bi-bar-chart me-2"></i> Stats
+        </a>
+        <a href="faq.html" class="nav-link sidebar-link">
+          <i class="bi bi-question-circle me-2"></i> FAQ
+        </a>
+      </nav>
+
+      <a href="#" class="nav-link sidebar-link mt-auto">
+        <i class="bi bi-person-circle me-2"></i> Mon Profil
+      </a>
+    </aside>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main class="main-content flex-grow-1 p-4">
+
+      <!-- Topbar -->
+      <header class="topbar d-flex justify-content-between align-items-center mb-4">
+        <div class="input-group topbar-search">
+          <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+          <input type="text" class="form-control" placeholder="Rechercher...">
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <div class="position-relative">
+            <i class="bi bi-bell fs-5"></i>
+            <span class="notif-dot"></span>
+          </div>
+          <img src="images/Profil3.jpg" alt="Utilisateur" class="avatar-img">
+        </div>
+      </header>
+
+      <!-- Titre -->
+      <div class="mb-4">
+        <h4 class="mb-1">Aperçu du Jour</h4>
+        <p class="text-muted mb-0">Gérez vos opérations de lavage en temps réel.</p>
+      </div>
+
+      <!-- Cartes stats -->
+      <section class="row g-3 mb-4">
+        <div class="col-md-3 col-sm-6">
+          <div class="card stat-card p-4">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <div class="stat-icon bg-light-blue">
+                <i class="bi bi-cash-coin"></i>
+              </div>
+              <span class="badge badge-hausse"><i class="bi bi-arrow-up"></i> 12%</span>
+            </div>
+            <p class="text-muted mb-1">Chiffre d'affaires</p>
+            <h4 class="fw-bold mb-0">85 000 FCFA</h4>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card stat-card p-4">
+            <div class="stat-icon bg-light-blue mb-3">
+              <i class="bi bi-car-front-fill"></i>
+            </div>
+            <p class="text-muted mb-1">Véhicules lavés</p>
+            <h4 class="fw-bold mb-0">18</h4>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card stat-card p-4">
+            <div class="stat-icon bg-primary text-white mb-3">
+              <i class="bi bi-hand-thumbs-up-fill"></i>
+            </div>
+            <p class="text-muted mb-1">Prestations en cours</p>
+            <h4 class="fw-bold mb-0">4</h4>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card stat-card p-4">
+            <div class="stat-icon bg-light-red mb-3">
+              <i class="bi bi-clipboard-check"></i>
+            </div>
+            <p class="text-muted mb-1">Commandes en attente</p>
+            <h4 class="fw-bold mb-0">2</h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contenu bas : tableau + actions/graphique -->
+      <div class="row g-4">
+
+        <!-- Tableau commandes en cours -->
+        <div class="col-lg-8">
+          <div class="card table-card p-0">
+            <div class="d-flex justify-content-between align-items-center p-4 pb-0">
+              <h5 class="fw-bold mb-0">Commandes &amp; Lavages en cours</h5>
+              <a href="listedescommandes.html" class="text-decoration-none">
+                Voir tout <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+            <div class="table-responsive p-4 pt-3">
+              <table class="table align-middle mb-0" id="tableDashboard">
+                <thead>
+                  <tr>
+                    <th>CLIENT</th>
+                    <th>VÉHICULE</th>
+                    <th>PRESTATION</th>
+                    <th>STATUT</th>
+                    <th>ACTIONS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr data-statut="en_cours">
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <span class="avatar-initiales bg-light-blue">MK</span>
+                        Merveil KOWOU
+                      </div>
+                    </td>
+                    <td>TG-1234-AZ</td>
+                    <td>Lavage Complet</td>
+                    <td><span class="badge badge-encours">EN COURS</span></td>
+                    <td><button class="btn btn-sm btn-outline-primary btn-action">Terminer</button></td>
+                  </tr>
+                  <tr data-statut="en_attente">
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <span class="avatar-initiales bg-light-gray">AD</span>
+                        ADIGOU Félix
+                      </div>
+                    </td>
+                    <td>TG-9876-BR</td>
+                    <td>Lavage Simple</td>
+                    <td><span class="badge badge-attente">EN ATTENTE</span></td>
+                    <td><button class="btn btn-sm btn-primary btn-action">Démarrer</button></td>
+                  </tr>
+                  <tr data-statut="termine">
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <span class="avatar-initiales bg-light-blue">PG</span>
+                        Paola GBEDEMAH
+                      </div>
+                    </td>
+                    <td>TG-4455-CD</td>
+                    <td>Nettoyage Moteur</td>
+                    <td><span class="badge badge-termine">TERMINÉ</span></td>
+                    <td>
+                      <a href="detailcommandefacture.html" class="btn btn-sm btn-outline-secondary btn-action">
+                        <i class="bi bi-receipt me-1"></i> Facturer
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colonne droite : actions rapides + graphique -->
+        <div class="col-lg-4">
+
+          <div class="row g-3 mb-3">
+            <div class="col-6">
+              <a href="nouvellecommande.html" class="card action-card action-card-primary p-3 text-center text-decoration-none h-100">
+                <i class="bi bi-cart-plus fs-3 mb-2"></i>
+                <span class="fw-bold">Nouvelle Commande</span>
+              </a>
+            </div>
+            <div class="col-6">
+              <a href="#" class="card action-card p-3 text-center text-decoration-none h-100" id="btnNouveauClientDash">
+                <i class="bi bi-person-plus fs-3 mb-2"></i>
+                <span class="fw-bold">Nouveau Client</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="card chart-card p-4">
+            <h6 class="fw-bold mb-3">Répartition des Prestations</h6>
+            <div class="d-flex justify-content-center mb-3">
+              <canvas id="chartPrestations" width="180" height="180"></canvas>
+            </div>
+            <ul class="list-unstyled chart-legend">
+              <li class="d-flex justify-content-between">
+                <span><span class="legend-dot" style="background:#0d6efd;"></span> Lavage Complet</span>
+                <strong>55%</strong>
+              </li>
+              <li class="d-flex justify-content-between">
+                <span><span class="legend-dot" style="background:#74b9ff;"></span> Lavage Simple</span>
+                <strong>30%</strong>
+              </li>
+              <li class="d-flex justify-content-between">
+                <span><span class="legend-dot" style="background:#e9ecef;"></span> Nettoyage Moteur</span>
+                <strong>15%</strong>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-muted py-3">
+    <small>&copy; 2026 Bidè - Gestion Lavage. Tous droits réservés.</small>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS perso -->
+  <script src="js/script.js"></script>
+</body>
+</html>
