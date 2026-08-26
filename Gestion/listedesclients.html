@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bidè - Répertoire des Clients</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- CSS perso -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="d-flex">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar d-flex flex-column p-3">
+      <div class="sidebar-brand d-flex align-items-center mb-4">
+        <img src="images/logo-bide.png" alt="Logo Bidè" class="logo-img me-2">
+        <div>
+          <h5 class="mb-0 text-primary fw-bold">Bidè</h5>
+          <small class="text-muted">Gestion Lavage</small>
+        </div>
+      </div>
+
+      <nav class="nav flex-column flex-grow-1">
+        <a href="dashbord.html" class="nav-link sidebar-link">
+          <i class="bi bi-grid-1x2 me-2"></i> Dashboard
+        </a>
+        <a href="listedesclients.html" class="nav-link sidebar-link active">
+          <i class="bi bi-people me-2"></i> Clients
+        </a>
+        <a href="listedesvehicules.html" class="nav-link sidebar-link">
+          <i class="bi bi-car-front me-2"></i> Véhicules
+        </a>
+        <a href="cataloguedesprestations.html" class="nav-link sidebar-link">
+          <i class="bi bi-droplet me-2"></i> Prestations
+        </a>
+        <a href="listedescommandes.html" class="nav-link sidebar-link">
+          <i class="bi bi-cart3 me-2"></i> Commandes
+        </a>
+        <a href="parametres.html" class="nav-link sidebar-link">
+          <i class="bi bi-gear me-2"></i> Paramètres
+        </a>
+        <a href="statistiques.html" class="nav-link sidebar-link">
+          <i class="bi bi-bar-chart me-2"></i> Stats
+        </a>
+        <a href="faq.html" class="nav-link sidebar-link">
+          <i class="bi bi-question-circle me-2"></i> FAQ
+        </a>
+      </nav>
+
+      <a href="#" class="nav-link sidebar-link mt-auto">
+        <i class="bi bi-person-circle me-2"></i> Mon Profil
+      </a>
+    </aside>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main class="main-content flex-grow-1 p-4">
+
+      <!-- Topbar -->
+      <header class="topbar d-flex justify-content-between align-items-center mb-4">
+        <div class="input-group topbar-search">
+          <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+          <input type="text" class="form-control" placeholder="Rechercher...">
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <i class="bi bi-bell fs-5"></i>
+          <i class="bi bi-circle fs-5"></i>
+          <img src="images/Profil3.jpg" alt="Utilisateur" class="avatar-img">
+        </div>
+      </header>
+
+      <!-- Titre + bouton -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+          <h4 class="mb-1">Répertoire des Clients</h4>
+          <p class="text-muted mb-0">Gérez vos clients et leur fidélité.</p>
+        </div>
+        <a href="formulaireclient.html" class="btn btn-primary">
+          <i class="bi bi-plus-lg me-1"></i> Ajouter un Client
+        </a>
+      </div>
+
+      <!-- Barre de filtres -->
+      <section class="card filter-bar p-3 mb-4">
+        <div class="row g-2 align-items-center">
+          <div class="col-md-4">
+            <div class="input-group">
+              <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+              <input type="text" class="form-control" id="rechercheClient" placeholder="Rechercher un nom...">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <select class="form-select" id="triClients">
+              <option value="date">Trier par Date</option>
+              <option value="nom">Trier par Nom</option>
+              <option value="commandes">Trier par Commandes</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <select class="form-select" id="filtreFidelite">
+              <option value="">Fidélité</option>
+              <option value="privilege">Client Privilège</option>
+              <option value="standard">Standard</option>
+            </select>
+          </div>
+          <div class="col-md-2 text-md-end">
+            <button class="btn btn-outline-secondary w-100" id="btnExporter">
+              <i class="bi bi-download me-1"></i> Exporter
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Grille des clients -->
+      <section class="row g-4" id="listeClients">
+
+        <!-- Carte client 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card client-card p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="images/moi.jpeg" alt="Paola GBEDEMAH" class="avatar-img-md">
+              <div>
+                <h6 class="fw-bold mb-1">Paola GBEDEMAH</h6>
+                <small class="text-muted"><i class="bi bi-telephone me-1"></i>+228 96 02 93 23</small>
+              </div>
+            </div>
+            <div class="row g-2 mb-3">
+              <div class="col-6">
+                <div class="client-stat-box">
+                  <small class="text-muted">VÉHICULES</small>
+                  <div class="fw-bold fs-5">2</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="client-stat-box">
+                  <small class="text-muted">COMMANDES</small>
+                  <div class="fw-bold fs-5">14</div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between text-muted small">
+              <span>ID: #CL-0842</span>
+              <span>Rejoint: Jan 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carte client 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card client-card p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="images/Profil1.jpg" alt="Félix ADIGOU" class="avatar-img-md">
+              <div>
+                <h6 class="fw-bold mb-1">Félix ADIGOU</h6>
+                <small class="text-muted"><i class="bi bi-telephone me-1"></i>+228  99 23 91 62</small>
+              </div>
+            </div>
+            <div class="row g-2 mb-3">
+              <div class="col-6">
+                <div class="client-stat-box">
+                  <small class="text-muted">VÉHICULES</small>
+                  <div class="fw-bold fs-5">1</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="client-stat-box">
+                  <small class="text-muted">COMMANDES</small>
+                  <div class="fw-bold fs-5">5</div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between text-muted small">
+              <span>ID: #CL-0911</span>
+              <span>Rejoint: Mar 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carte Nouveau Client -->
+        <div class="col-md-6 col-lg-4">
+          <a href="formulaireclient.html" class="card client-card-new p-4 h-100 text-decoration-none">
+            <div class="new-client-icon mx-auto mb-3">
+              <i class="bi bi-plus-lg"></i>
+            </div>
+            <h6 class="fw-bold text-center mb-1">Nouveau Client</h6>
+            <p class="text-muted text-center small mb-0">
+              Cliquez pour ajouter manuellement un profil.
+            </p>
+          </a>
+        </div>
+
+      </section>
+
+      <!-- Pagination -->
+      <div class="d-flex justify-content-between align-items-center mt-4">
+        <span class="text-muted small">Affichage 1 à 2 sur 24 clients</span>
+        <nav>
+          <ul class="pagination pagination-sm mb-0">
+            <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-muted py-3">
+    <small>&copy; 2026 Bidè - Gestion Lavage. Tous droits réservés.</small>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS perso -->
+  <script src="js/script.js"></script>
+</body>
+</html>
