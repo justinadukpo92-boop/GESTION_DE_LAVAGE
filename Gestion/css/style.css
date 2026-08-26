@@ -1,0 +1,1128 @@
+/* ============================
+   RESET / BASE
+============================ */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #212529;
+  margin: 0;
+}
+
+/* ============================
+   SIDEBAR
+============================ */
+.sidebar {
+  width: 260px;
+  min-height: 100vh;
+  background-color: #ffffff;
+  border-right: 1px solid #eaeaea;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.sidebar-link {
+  color: #4a4a4a;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 4px;
+  font-weight: 500;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.sidebar-link:hover {
+  background-color: #f1f5f9;
+  color: #0d6efd;
+}
+
+.sidebar-link.active {
+  background-color: #e7f1ff;
+  color: #0d6efd;
+  font-weight: 600;
+}
+
+/* ============================
+   MAIN CONTENT / TOPBAR
+============================ */
+.main-content {
+  min-height: 100vh;
+}
+
+.topbar h4 {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.avatar-img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ============================
+   FORM CARD (Véhicule)
+============================ */
+.form-card {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  max-width: 900px;
+}
+
+.form-card h5 {
+  color: #1a1a1a;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #343a40;
+}
+
+.form-control,
+.form-select {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 10px 14px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+/* ============================
+   COLOR PICKER
+============================ */
+.color-picker {
+  flex-wrap: wrap;
+}
+
+.color-swatch {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.color-swatch:hover {
+  transform: scale(1.1);
+}
+
+.color-swatch.selected {
+  box-shadow: 0 0 0 3px #ffffff, 0 0 0 5px #0d6efd;
+}
+
+.color-swatch-custom {
+  background: conic-gradient(red, yellow, green, cyan, blue, magenta, red);
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* ============================
+   FOOTER
+============================ */
+footer {
+  background-color: #ffffff;
+  border-top: 1px solid #eaeaea;
+}
+
+/* ============================
+   RESPONSIVE
+============================ */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    border-right: none;
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .form-card {
+    max-width: 100%;
+  }
+}
+
+/* ============================
+   NOTIFICATION DOT (topbar)
+============================ */
+.notif-dot {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 8px;
+  height: 8px;
+  background-color: #dc3545;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+}
+
+/* ============================
+   BANDEAU INFO (Catalogue)
+============================ */
+.info-banner {
+  background: linear-gradient(135deg, #17a2e8, #0d6efd);
+  color: #ffffff;
+  border-radius: 14px;
+}
+
+.info-icon {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.info-banner p {
+  opacity: 0.95;
+  font-size: 0.95rem;
+}
+
+/* ============================
+   CARTES PRESTATIONS
+============================ */
+.prestation-card {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.prestation-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.prestation-card h5 {
+  color: #1a1a1a;
+}
+
+.prestation-card p {
+  font-size: 0.9rem;
+  min-height: 48px;
+}
+
+.prestation-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.bg-light-blue {
+  background-color: #e7f1ff;
+  color: #0d6efd;
+}
+
+.bg-light-gray {
+  background-color: #f1f3f5;
+  color: #495057;
+}
+
+.badge-tag {
+  background-color: #f1f3f5;
+  color: #495057;
+  font-weight: 600;
+  font-size: 0.7rem;
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+
+.badge-recommande {
+  background-color: #e7f1ff;
+  color: #0d6efd;
+}
+
+.prestation-prix {
+  font-weight: 700;
+  color: #0d6efd;
+  font-size: 1.05rem;
+}
+
+/* ============================
+   STEPPER (Nouvelle Commande)
+============================ */
+.stepper {
+  max-width: 700px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  min-width: 70px;
+}
+
+.step-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.step-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #adb5bd;
+  letter-spacing: 0.5px;
+}
+
+.step.active .step-circle {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+.step.active .step-label {
+  color: #0d6efd;
+}
+
+.step.completed .step-circle {
+  background-color: #198754;
+  color: #ffffff;
+}
+
+.step-line {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #e9ecef;
+  margin: 0 8px;
+  margin-bottom: 22px;
+}
+
+/* ============================
+   CONTENU DES ÉTAPES
+============================ */
+.step-content {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  max-width: 900px;
+}
+
+/* ============================
+   CARTE RÉSULTAT (Recherche véhicule)
+============================ */
+.result-card {
+  background-color: #f1f5f9;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.result-icon {
+  width: 56px;
+  height: 56px;
+  background-color: #dbeafe;
+  color: #0d6efd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+/* ============================
+   SÉLECTION SERVICES (Étape 2)
+============================ */
+.service-option {
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  padding: 14px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.service-option:hover {
+  border-color: #0d6efd;
+}
+
+.service-option.selected {
+  border-color: #0d6efd;
+  background-color: #e7f1ff;
+}
+
+/* ============================
+   RÉSUMÉ (Étape 4)
+============================ */
+.resume-ligne {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.resume-total {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+/* ============================
+   TOPBAR SEARCH
+============================ */
+.topbar-search {
+  max-width: 400px;
+}
+
+.topbar-search .form-control {
+  border-left: none;
+}
+
+.topbar-search .input-group-text {
+  border-right: none;
+}
+
+/* ============================
+   FILTRES (Liste commandes)
+============================ */
+.filter-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #6c757d;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+/* ============================
+   TABLEAU COMMANDES
+============================ */
+.table-card {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+#tableCommandes thead th {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #eaeaea;
+  padding: 14px 16px;
+  white-space: nowrap;
+}
+
+#tableCommandes tbody td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #f1f3f5;
+  font-size: 0.9rem;
+}
+
+#tableCommandes tbody tr:last-child td {
+  border-bottom: none;
+}
+
+#tableCommandes tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+/* Avatars initiales / image dans le tableau */
+.avatar-initiales {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #495057;
+}
+
+.avatar-img-sm {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ============================
+   BADGES STATUTS
+============================ */
+.badge-paye {
+  background-color: #d1f7e0;
+  color: #198754;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+}
+
+.badge-attente {
+  background-color: #fff3cd;
+  color: #997404;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+}
+
+.badge-termine {
+  background-color: #d7e6ff;
+  color: #0d6efd;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+}
+
+.badge-encours {
+  background-color: #ffe8d1;
+  color: #b9601a;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+}
+
+.badge-attente-lavage {
+  background-color: #f1f3f5;
+  color: #495057;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+}
+
+/* ============================
+   PAGINATION
+============================ */
+.pagination .page-link {
+  color: #495057;
+  border-radius: 6px;
+  margin: 0 2px;
+  border: 1px solid #eaeaea;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #ffffff;
+}
+
+/* ============================
+   CARTES INFO (colonne gauche)
+============================ */
+.info-card {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+}
+
+.avatar-img-md {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.remarque-laveur {
+  background-color: #f8f9fa;
+  border-left: 3px solid #0d6efd;
+  padding: 12px 16px;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #495057;
+  margin: 0;
+  border-radius: 0 8px 8px 0;
+}
+
+/* ============================
+   CARTE FACTURE
+============================ */
+.facture-card {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 14px;
+}
+
+.facture-logo {
+  width: 48px;
+  height: 48px;
+  background-color: #0d6efd;
+  color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+/* ============================
+   TABLEAU FACTURE
+============================ */
+.table-facture thead th {
+  color: #6c757d;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #eaeaea;
+  padding: 10px 8px;
+}
+
+.table-facture tbody td {
+  padding: 14px 8px;
+  border-bottom: 1px solid #f1f3f5;
+  vertical-align: top;
+}
+
+/* ============================
+   TOTAUX FACTURE
+============================ */
+.facture-totaux {
+  max-width: 320px;
+  width: 100%;
+}
+
+.total-net-box {
+  background-color: #f1f5f9;
+  border-radius: 8px;
+  font-size: 1.05rem;
+}
+
+/* ============================
+   IMPRESSION
+============================ */
+@media print {
+  .sidebar,
+  .topbar,
+  footer,
+  .col-lg-4,
+  #btnEnvoyerSMS,
+  #btnExportPDF,
+  #btnImprimer,
+  .d-flex.justify-content-between.align-items-start.mb-4.flex-wrap.gap-3 {
+    display: none !important;
+  }
+
+  .col-lg-8 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .facture-card {
+    border: none;
+    box-shadow: none;
+  }
+
+  body {
+    background-color: #ffffff;
+  }
+}
+
+/* ============================
+   PAGE CONNEXION
+============================ */
+.login-body {
+  background: linear-gradient(135deg, #eaf2ff, #f5f7fa);
+  min-height: 100vh;
+}
+
+.login-wrapper {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-card {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(13, 110, 253, 0.08);
+  max-width: 460px;
+  width: 100%;
+}
+
+.login-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 16px;
+  border: 1px solid #eaeaea;
+  padding: 8px;
+}
+
+.login-card h2 {
+  font-size: 2rem;
+}
+
+.toggle-password {
+  cursor: pointer;
+}
+
+.toggle-password:hover {
+  color: #0d6efd;
+}
+
+.btn-connexion {
+  padding: 12px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .login-card {
+    padding: 2rem !important;
+  }
+}
+
+/* ============================
+   CARTES STATISTIQUES (Dashboard)
+============================ */
+.stat-card {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 14px;
+}
+
+.stat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.bg-light-red {
+  background-color: #fde8e8;
+  color: #dc3545;
+}
+
+.badge-hausse {
+  background-color: #d1f7e0;
+  color: #198754;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+}
+
+/* ============================
+   BOUTONS D'ACTION (tableau dashboard)
+============================ */
+.btn-action {
+  white-space: nowrap;
+}
+
+/* ============================
+   CARTES ACTIONS RAPIDES
+============================ */
+.action-card {
+  border: 1px solid #eaeaea;
+  border-radius: 14px;
+  color: #343a40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.action-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.action-card-primary {
+  background-color: #0d6efd;
+  color: #ffffff;
+  border: none;
+}
+
+/* ============================
+   GRAPHIQUE DONUT
+============================ */
+.chart-card {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 14px;
+}
+
+.chart-legend li {
+  padding: 6px 0;
+  font-size: 0.85rem;
+  color: #495057;
+}
+
+.legend-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* ============================
+   BARRE DE FILTRES (Clients)
+============================ */
+.filter-bar {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+}
+
+/* ============================
+   CARTES CLIENTS
+============================ */
+.client-card {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 14px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.client-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.client-stat-box {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 10px 12px;
+  text-align: center;
+}
+
+/* ============================
+   CARTE "NOUVEAU CLIENT"
+============================ */
+.client-card-new {
+  background-color: #f8fafc;
+  border: 2px dashed #cbd5e1;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.client-card-new:hover {
+  border-color: #0d6efd;
+  background-color: #eaf2ff;
+}
+
+.new-client-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #dbeafe;
+  color: #0d6efd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+/* ============================
+   MODALE FICHE CLIENT
+============================ */
+.fiche-client-modal {
+  border-radius: 16px;
+  border: none;
+}
+
+.section-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #0d6efd;
+  letter-spacing: 0.5px;
+}
+
+/* ============================
+   TYPE DE CLIENT (radio cards)
+============================ */
+.type-client-option {
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.type-client-option:hover {
+  border-color: #0d6efd;
+}
+
+.type-client-option input[type="radio"] {
+  margin: 0;
+}
+
+.type-client-option:has(input:checked) {
+  border-color: #0d6efd;
+  background-color: #e7f1ff;
+  color: #0d6efd;
+}
+
+/* ============================
+   FILTRES VÉHICULES
+============================ */
+.filter-select {
+  max-width: 220px;
+}
+
+/* ============================
+   TABLEAU VÉHICULES
+============================ */
+.vehicule-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #f1f5f9;
+  color: #495057;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.historique-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #f1f5f9;
+  color: #343a40;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  color: #6c757d;
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.btn-icon:hover {
+  background-color: #f1f3f5;
+  color: #0d6efd;
+}
+
+/* ============================
+   PAGE PARAMÈTRES
+============================ */
+.logo-preview {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+/* ============================
+   PAGE STATISTIQUES
+============================ */
+.top-prestations li {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.top-prestations li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* ============================
+   GESTION PRESTATIONS (Admin)
+============================ */
+.btn-supprimer-prestation {
+  min-width: 40px;
+}
+
+/* ============================
+   PAGE FAQ (Accordéon)
+============================ */
+.faq-card {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 14px;
+}
+
+.faq-item {
+  border: none;
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-button {
+  font-weight: 600;
+  color: #1a1a1a;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #0d6efd;
+  background-color: #f8fafc;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.accordion-button::after {
+  background-size: 1.1rem;
+}
+
+.accordion-body {
+  color: #495057;
+  font-size: 0.9rem;
+}
+
+/* ============================
+   MODE SOMBRE (méthode rapide)
+============================ */
+html[data-theme="dark"] {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+/* ============================
+   RESPONSIVE GLOBAL
+============================ */
+@media (max-width: 768px) {
+
+  /* --- Layout général --- */
+  .d-flex {
+    flex-direction: column;
+  }
+
+  /* --- Sidebar --- */
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    border-right: none;
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  .sidebar nav {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .sidebar-link {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+  }
+
+  .sidebar-link span,
+  .sidebar-brand small {
+    display: none;
+  }
+
+  /* --- Topbar --- */
+  .topbar {
+    flex-direction: column;
+    align-items: stretch !important;
+    gap: 12px;
+  }
+
+  .topbar-search {
+    max-width: 100%;
+  }
+
+  /* --- Cartes formulaires --- */
+  .form-card,
+  .step-content,
+  .facture-card {
+    max-width: 100%;
+    padding: 1.25rem !important;
+  }
+
+  /* --- Cartes stats --- */
+  .stat-card {
+    text-align: center;
+  }
+
+  /* --- Stepper nouvelle commande --- */
+  .stepper {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .step-label {
+    font-size: 0.6rem;
+  }
+
+  .step-circle {
+    width: 30px;
+    height: 30px;
+    font-size: 0.85rem;
+  }
+
+  /* --- Tableaux --- */
+  .table-card {
+    border-radius: 10px;
+  }
+
+  /* --- Filtres --- */
+  .filter-bar .row > div {
+    margin-bottom: 8px;
+  }
+
+  /* --- Login --- */
+  .login-card {
+    padding: 2rem !important;
+  }
+
+  /* --- Facture --- */
+  .facture-totaux {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .stat-card h3,
+  .stat-card h4 {
+    font-size: 1.3rem;
+  }
+
+  .prestation-card,
+  .client-card {
+    padding: 1rem !important;
+  }
+}
