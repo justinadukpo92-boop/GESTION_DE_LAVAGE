@@ -102,16 +102,16 @@ GESTION_DE_LAVAGE/<br>
  <strong>Photo - Nom - Rôle<strong>
 <br><br>
 
-<img src="Gestion/images/equipe/paola.jpeg" width="80" height="80" style="border-radius:50%;">	GBEDEMAH Paola,	Etudiante en developpement web et web mobile<br><br>
+<img src="Gestion/images/equipe/paola.png" width="80">	GBEDEMAH Paola,	Etudiante en developpement web et web mobile<br><br>
 
-<img src="Gestion/images/equipe/merveil.jpeg" width="80" height="80" style="border-radius:50%;">	KOWOU Sanvi Merveil,	Etudiant en developpement web et web mobile<br><br>
+<img src="Gestion/images/equipe/merveil.png" width="80">	KOWOU Sanvi Merveil,	Etudiant en developpement web et web mobile<br><br>
 
-<img src="Gestion/images/equipe/felix.jpeg" width="80" height="80" style="border-radius:50%;">	ADIGOU Adélodjou Félix,	Etudiant en developpement web et web mobile<br><br>
+<img src="Gestion/images/equipe/felix.png" width="80">	ADIGOU Adélodjou Félix,	Etudiant en developpement web et web mobile<br><br>
 
-<img src="Gestion/images/equipe/kodzovi.jpeg" width="80" height="80" style="border-radius:50%;">	ADUKPO Kodzovi,	Scrum Master / Lead Dev / Etudiant en developpement web et web mobile<br><br>
+<img src="Gestion/images/equipe/kodzovi.png" width="80">	ADUKPO Kodzovi,	Scrum Master / Lead Dev / Etudiant en developpement web et web mobile<br><br>
 
 ## ENCADREMENT
-<img src="Gestion/images/equipe/formateur.jpeg" width="80" height="80" style="border-radius:50%;">	Abdou-Akim GBADAMASSI	Formateur référent, Ambassadeur 10 000 Codeurs 
+<img src="Gestion/images/equipe/formateur.png" width="80">	Abdou-Akim GBADAMASSI	Formateur référent, Ambassadeur 10 000 Codeurs 
 <br><br><br><br>
 
 
