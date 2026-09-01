@@ -51,7 +51,7 @@ Plateforme de gestion complète pour le lavage automobile **"Bidè"** – AKIMMA
 ## 📁 Structure du projet
 
 GESTION_DE_LAVAGE/<br>
-├── Gestion/<br># Plateforme de gestion (back-office)<br>
+├── Gestion/# Plateforme de gestion (back-office)<br>
 │ ├── index.html # Page de connexion<br>
 │ ├── dashbord.html # Tableau de bord<br>
 │ ├── listedesclients.html<br>
@@ -78,8 +78,8 @@ GESTION_DE_LAVAGE/<br>
 │ ├── felix.jpg<br>
 │ ├── kodzovi.jpg<br>
 │ └── formateur.jpg<br>
-├── site-vitrine/ <br># Site public (front-office)<br>
-└── README.md <br># Ce fichier<br>
+├── site-vitrine/ # Site public (front-office)<br>
+└── README.md # Ce fichier<br>
 
 
 
@@ -102,26 +102,17 @@ GESTION_DE_LAVAGE/<br>
  <strong>Photo - Nom - Rôle<strong>
 <br><br>
 
-<img src="Gestion/images/equipe/paola.jpeg" class="avatar">	GBEDEMAH Paola,	Etudiante en developpement web et web mobile<br><br>
+<img src="Gestion/images/equipe/paola.jpeg" width="80" height="80" style="border-radius:50%;">	GBEDEMAH Paola,	Etudiante en developpement web et web mobile<br><br>
 
-<img src="Gestion/images/equipe/merveil.jpeg" class="avatar">	KOWOU Sanvi Merveil,	Etudiant en developpement web et web mobile<br><br>
+<img src="Gestion/images/equipe/merveil.jpeg" width="80" height="80" style="border-radius:50%;">	KOWOU Sanvi Merveil,	Etudiant en developpement web et web mobile<br><br>
 
-<img src="Gestion/images/equipe/felix.jpeg" class="avatar">	ADIGOU Adélodjou Félix,	Etudiant en developpement web et web mobile<br><br>
+<img src="Gestion/images/equipe/felix.jpeg" width="80" height="80" style="border-radius:50%;">	ADIGOU Adélodjou Félix,	Etudiant en developpement web et web mobile<br><br>
 
-<img src="Gestion/images/equipe/kodzovi.jpeg" class="avatar">	ADUKPO Kodzovi,	Scrum Master / Lead Dev, Etudiant en developpement web et web mobile<br><br>
+<img src="Gestion/images/equipe/kodzovi.jpeg" width="80" height="80" style="border-radius:50%;">	ADUKPO Kodzovi,	Scrum Master / Lead Dev / Etudiant en developpement web et web mobile<br><br>
 
 ## ENCADREMENT
-<img src="Gestion/images/equipe/formateur.jpeg" class="avatar">	Abdou-Akim GBADAMASSI	Formateur référent, Ambassadeur 10 000 Codeurs 
+<img src="Gestion/images/equipe/formateur.jpeg" width="80" height="80" style="border-radius:50%;">	Abdou-Akim GBADAMASSI	Formateur référent, Ambassadeur 10 000 Codeurs 
 <br><br><br><br>
-
-<style>
-  .avatar {
-    border-radius: 50% !important;
-    object-fit: cover;
-    width: 80px;
-    height: 80px;
-  }
-</style>
 
 
 ## 📄 Livrables
