@@ -50,36 +50,36 @@ Plateforme de gestion complète pour le lavage automobile **"Bidè"** – AKIMMA
 
 ## 📁 Structure du projet
 
-GESTION_DE_LAVAGE/
-├── Gestion/ # Plateforme de gestion (back-office)
-│ ├── index.html # Page de connexion
-│ ├── dashbord.html # Tableau de bord
-│ ├── listedesclients.html
-│ ├── formulaireclient.html
-│ ├── listedesvehicules.html
-│ ├── formulairevehicule.html
-│ ├── cataloguedesprestations.html
-│ ├── gestiondesprestations.html
-│ ├── nouvellecommande.html
-│ ├── listedescommandes.html
-│ ├── detailcommandefacture.html
-│ ├── parametres.html
-│ ├── statistiques.html
-│ ├── faq.html
-│ ├── css/
-│ │ └── style.css
-│ ├── js/
-│ │ └── script.js
-│ └── images/
-│ ├── logo-bide.png
-│ └── equipe/ # Photos de l'équipe
-│ ├── paola.jpg
-│ ├── merveil.jpg
-│ ├── felix.jpg
-│ ├── kodzovi.jpg
-│ └── formateur.jpg
-├── site-vitrine/ # Site public (front-office)
-└── README.md # Ce fichier
+GESTION_DE_LAVAGE/<br>
+├── Gestion/<br># Plateforme de gestion (back-office)<br>
+│ ├── index.html # Page de connexion<br>
+│ ├── dashbord.html # Tableau de bord<br>
+│ ├── listedesclients.html<br>
+│ ├── formulaireclient.html<br>
+│ ├── listedesvehicules.html<br>
+│ ├── formulairevehicule.html<br>
+│ ├── cataloguedesprestations.html<br>
+│ ├── gestiondesprestations.html<br>
+│ ├── nouvellecommande.html<br>
+│ ├── listedescommandes.html<br>
+│ ├── detailcommandefacture.html<br>
+│ ├── parametres.html<br>
+│ ├── statistiques.html<br>
+│ ├── faq.html<br>
+│ ├── css/<br>
+│ │ └── style.css<br>
+│ ├── js/<br>
+│ │ └── script.js<br>
+│ └── images/<br>
+│ ├── logo-bide.png<br>
+│ └── equipe/ # Photos de l'équipe<br>
+│ ├── paola.jpg<br>
+│ ├── merveil.jpg<br>
+│ ├── felix.jpg<br>
+│ ├── kodzovi.jpg<br>
+│ └── formateur.jpg<br>
+├── site-vitrine/ <br># Site public (front-office)<br>
+└── README.md <br># Ce fichier<br>
 
 
 
@@ -102,17 +102,26 @@ GESTION_DE_LAVAGE/
  <strong>Photo - Nom - Rôle<strong>
 <br><br>
 
-<img src="Gestion/images/equipe/paola.jpeg" width="100" height="100" style="border-radius:50%;">	GBEDEMAH Paola,	Etudiante en developpement web et web mobile<br><br>
+<img src="Gestion/images/equipe/paola.jpeg" class="avatar">	GBEDEMAH Paola,	Etudiante en developpement web et web mobile<br><br>
 
-<img src="Gestion/images/equipe/merveil.jpeg" width="100" height="100" style="border-radius:50%;">	KOWOU Sanvi Merveil,	Etudiant en developpement web et web mobile<br><br>
+<img src="Gestion/images/equipe/merveil.jpeg" class="avatar">	KOWOU Sanvi Merveil,	Etudiant en developpement web et web mobile<br><br>
 
-<img src="Gestion/images/equipe/félix.jpeg" width="100" height="100" style="border-radius:50%;">	ADIGOU Adélodjou Félix,	Etudiant en developpement web et web mobile<br><br>
+<img src="Gestion/images/equipe/felix.jpeg" class="avatar">	ADIGOU Adélodjou Félix,	Etudiant en developpement web et web mobile<br><br>
 
-<img src="Gestion/images/equipe/kodzovi.jpeg" width="100" height="100" style="border-radius:50%;">	ADUKPO Kodzovi,	Scrum Master / Lead Dev / Etudiant en developpement web et web mobile<br><br>
+<img src="Gestion/images/equipe/kodzovi.jpeg" class="avatar">	ADUKPO Kodzovi,	Scrum Master / Lead Dev, Etudiant en developpement web et web mobile<br><br>
 
 ## ENCADREMENT
-<img src="Gestion/images/equipe/formateur.jpeg" width="100" height="100" style="border-radius:50%;">	Abdou-Akim GBADAMASSI	Formateur référent, Ambassadeur 10 000 Codeurs 
+<img src="Gestion/images/equipe/formateur.jpeg" class="avatar">	Abdou-Akim GBADAMASSI	Formateur référent, Ambassadeur 10 000 Codeurs 
 <br><br><br><br>
+
+<style>
+  .avatar {
+    border-radius: 50% !important;
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+  }
+</style>
 
 
 ## 📄 Livrables
