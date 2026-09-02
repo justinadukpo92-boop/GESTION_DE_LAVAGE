@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos services — Bidè</title>
+  <meta name="description" content="Toutes les prestations de lavage, nettoyage et cirage proposées par la station Bidè à Lomé.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bide-nav sticky-top">
+    <div class="container">
+      <a class="bide-brand" href="index.html">
+        <span class="logo-chip"><img src="Images/logo.png" width="80" height="80" alt="Logo de Bidè"></span> Bidè
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-lg-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="A propos.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="Nos services.html">Nos services</a></li>
+          <li class="nav-item"><a class="nav-link" href="Nos tarifs.html">Nos tarifs</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex gap-2 mt-3 mt-lg-0">
+          <a href="Contact.html" class="btn btn-blue">Réserver maintenant</a>
+          <a href="Contact.html" class="icon-circle d-none d-lg-inline-flex" aria-label="Nous appeler">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BANNIÈRE -->
+  <header class="section pb-0" style="background:linear-gradient(180deg,#eaf1fb 0%,#fff 100%);">
+    <div class="container text-center">
+      <p class="eyebrow mb-2">Prestations</p>
+      <h1 class="mb-3">Nos Prestations de Lavage</h1>
+      <p class="text-slate mx-auto" style="max-width:34rem;">Des offres claires et adaptées à chaque besoin, du rafraîchissement express au traitement complet du véhicule.</p>
+    </div>
+  </header>
+
+  <!-- GRILLE DE SERVICES -->
+  <section class="section pt-4">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="svc-card">
+            <div class="svc-media">
+              <img src="Images/laveur.jpg" alt="Lavage extérieur express">
+            </div>
+            <div class="svc-body">
+              <h3 class="h6">Lavage Extérieur Express</h3>
+              <p class="text-slate small">Prélavage, shampoing carrosserie et séchage rapide pour un résultat propre en 20 minutes.</p>
+              <div class="price-tag">Dès 3 000 FCFA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="svc-card">
+            <div class="svc-media">
+              <img src="Images/interieur.jpg" alt="Nettoyage intérieur"><path d="M4 15h16M6 15V9a6 6 0 0 1 12 0v6" stroke="currentColor" stroke-width="1.6"/></svg>
+            </div>
+            <div class="svc-body">
+              <h3 class="h6">Nettoyage Intérieur Pro</h3>
+              <p class="text-slate small">Aspiration complète, sièges et tapis rafraîchis, tableau de bord dépoussiéré.</p>
+              <div class="price-tag">Dès 4 500 FCFA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="svc-card featured">
+            <span class="badge-pop">Populaire</span>
+            <div class="svc-media">
+             <img src="Images/voiture.jpg" alt="Lavage complet"><path d="M12 3l7 3v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6l7-3z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="svc-body">
+              <h3 class="h6">Lavage Complet</h3>
+              <p>L'extérieur et l'intérieur traités ensemble, avec finitions soignées pour un véhicule impeccable.</p>
+              <div class="price-tag">Dès 7 000 FCFA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="svc-card">
+            <div class="svc-media">
+              <img src="Images/pressage et shampooing.png" alt="Pressing & Shampooing">
+            </div>
+            <div class="svc-body">
+              <h3 class="h6">Pressing &amp; Shampooing</h3>
+              <p class="text-slate small">Shampoing en profondeur des sièges et moquettes, idéal avant une revente.</p>
+              <div class="price-tag">Dès 6 000 FCFA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="svc-card">
+            <div class="svc-media">
+              <img src="Images/cirage et lustrage.png" alt="Cirage et lustrage"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </div>
+            <div class="svc-body">
+              <h3 class="h6">Cirage &amp; Lustrage</h3>
+              <p class="text-slate small">Une couche de cire protectrice qui redonne de la profondeur à la peinture.</p>
+              <div class="price-tag">Dès 5 000 FCFA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="svc-card">
+            <div class="svc-media">
+              <img src="Images/lavage moteur et chassis.png" alt="Lavage Moteur & Châssis"><path d="M4 17h16M6 17V9l2-4h8l2 4v8M8 13h8" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="svc-body">
+              <h3 class="h6">Lavage Moteur &amp; Châssis</h3>
+              <p class="text-slate small">Dégraissage moteur et nettoyage du châssis pour un entretien mécanique optimal.</p>
+              <div class="price-tag">Dès 8 000 FCFA</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE SUR-MESURE -->
+  <section class="container mb-5">
+    <div class="cta-navy d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-4">
+      <div style="position:relative; z-index:2;">
+        <h2 class="h4 mb-1" style="color:#fff;">Besoin d'un service sur-mesure ?</h2>
+        <p class="mb-0" style="color:rgba(255,255,255,0.75); max-width:32rem;">Flotte d'entreprise, véhicule de collection ou besoin spécifique : parlons-en et nous adaptons la prestation.</p>
+      </div>
+      <a href="Contact.html" class="btn btn-blue flex-shrink-0" style="position:relative; z-index:2;">Nous contacter</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bide-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="bide-brand mb-2"><span class="logo-chip"><img src="Images/logo.png" width="80" height="80" alt="Logo Bidè"></span> Bidè</div>
+          <p class="small mb-0">La station de lavage automobile de référence à Lomé.</p>
+        </div>
+        <div class="col-md-2">
+          <h6 class="mb-3">Liens</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html">Accueil</a></li>
+            <li class="mb-2"><a href="A propos.html">À propos</a></li>
+            <li class="mb-2"><a href="Nos services.html">Services</a></li>
+            <li><a href="Nos tarifs.html">Tarifs</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="mb-3">Horaires</h6>
+          <p class="small mb-1">Lun – Sam : 7h00 – 19h00</p>
+          <p class="small mb-0">Dimanche : 9h00 – 15h00</p>
+        </div>
+        <div class="col-md-3">
+          <h6 class="mb-3">Contact</h6>
+          <p class="small mb-1">Lomé, Togo</p>
+          <p class="small mb-0">+228 90 00 00 00</p>
+        </div>
+      </div>
+      <hr class="my-4">
+      <p class="small mb-0 text-center">© 2026 Bidè — Station de lavage AKIMMAKO. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
